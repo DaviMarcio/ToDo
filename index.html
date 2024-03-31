@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="" type="image/x-icon">
+  </head>
+  <body>
+    <div id="app">
+      <nav>
+        <div class="logo"></div>
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <ion-icon name="tablet-portrait"></ion-icon>
+              Boards
+            </a>
+          </li>
+          <li>
+            <a href="#" class="people">
+              <ion-icon name="people"></ion-icon>
+              Equipes
+            </a>
+          </li>
+          <li>
+            <a href="#" class="document">
+              <ion-icon name="document-text"></ion-icon>
+              Relatório
+            </a>
+          </li>
+          <li>
+            <a href="#" class="conf">
+              <ion-icon name="cog"></ion-icon>
+              Ajustes
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="inner">
+          <section class="title-avatar">
+            <h1>Minhas Tarefas <img src="" alt="" /></h1>
+            <img src="https://github.com/DaviMarcio.png" alt="avatar" />
+          </section>
+          <section class="filter">
+            <button>
+              <ion-icon name="filter-outline"></ion-icon>
+              <span>Filtrar</span>
+            </button>
+            <div class="input-wrapper">
+              <ion-icon name="search-outline"></ion-icon>
+              <input
+                type="text"
+                placeholder="Busque por cards ou assuntos..."
+              />
+            </div>
+          </section>
+          <section class="kanban">
+            <div class="todo">
+              <h2>A fazer</h2>
+              <div class="cards">
+                <div class="card">
+                  <h3>Teste do card</h3>
+                  <p>Este é um card que vc pode mudar.</p>
+                  <div class="tags">
+                    <span>categoria</span>
+                    <span>desafio</span>
+                  </div>
+                </div>
+                <div class="card">
+                  <h3>Teste do card</h3>
+                  <p>Este é um card que vc pode mudar.</p>
+                  <div class="tags">
+                    <span>categoria</span>
+                    <span>desafio</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="doing">
+              <h2>fazendo</h2>
+            </div>
+            <div class="done">
+              <h2>feito</h2>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
