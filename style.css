@@ -208,3 +208,26 @@ section.kanban h1 {
     gap: 2.4;
     flex-direction: column;
 }
+
+.add-card { 
+  display: grid;
+  justify-items: center;
+  width: 20%;
+  margin: 8rem auto;
+  padding: 1rem;
+}
+
+.add-card h3 {
+  font-size: 2rem;
+}
+
+.add-card button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.add-card ion-icon {
+  font-size: 5rem;
+  margin: 1rem
+}
