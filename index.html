@@ -89,11 +89,41 @@
           <div class="add-card">
             <h3>Adicione um novo card</h3>
             
-              <button id="open-modal">
+              <button id="openModalBtn">
                 <ion-icon name="add-circle-outline"></ion-icon>
               </button>
         </div>
       </main>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <form id="todoForm">
+            <p>Crie sua Tarefa<p>
+            <div class="form-control">
+              <input type="text"
+               id="todoInput" 
+               placeholder="Qual a sua tarefa?"
+              >
+              <button type="submit">
+                <ion-icon name="add-outline"></ion-icon>
+              </button>
+            </div>
+            
+          </form>
+          <form id="editForm" class="hide">
+            <p>Edite sua tarefa<p/>
+            <div class="form-control">
+              <input type="text" id="editInput">
+              <button type="submit">
+                <ion-icon name="cut-outline"></ion-icon>
+              </button>
+            </div>
+            <button id="cancelEditBtn">Cancelar</button>
+            
+          </form>
+      </div>
     </div>
 
     <script src="script.js"></script>
