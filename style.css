@@ -219,6 +219,7 @@ section.kanban h1 {
 
 .add-card h3 {
   font-size: 2rem;
+  text-align: center;
 }
 
 .add-card button {
