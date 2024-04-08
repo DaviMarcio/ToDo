@@ -243,6 +243,7 @@ section.kanban h1 {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(.14rem);
 }
 
 .modal-content {
@@ -250,7 +251,7 @@ section.kanban h1 {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 2.2rem 0rem rgba(68, 68, 68, 0.6);
   border-radius: .8rem;
   width: 40%;
   max-width: 40%;
