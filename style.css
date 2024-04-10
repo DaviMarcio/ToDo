@@ -172,6 +172,29 @@ section.kanban h1 {
     background: #FFFF;
     box-shadow: .0rem .4rem 1.6rem #EAE2FD;
     line-height: 130%;
+
+}
+
+.card ion-icon {
+  color: white;
+  background: blueviolet;
+  border-radius: .5rem;
+  display: flex;
+  border: none;
+  padding: .6rem;
+  font-size: large;
+}
+
+.card button {
+  border: none;
+  cursor: pointer;
+  margin-right: .6rem;
+  margin-bottom: .5rem;
+  max-width: 3rem;
+}
+
+.card button:hover > ion-icon {
+  pointer-events: none;
 }
 
 .card h3 {
@@ -184,6 +207,7 @@ section.kanban h1 {
     font-size: 1.4rem;
     color: #756966;
     margin-top: 1rem;
+    word-break: break-all;
 }
 
 .card .tags {
