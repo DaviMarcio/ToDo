@@ -227,7 +227,7 @@ section.kanban h1 {
     padding: .4rem .8rem;
 }
 
-.cards {
+.dropzone {
     display: flex;
     gap: 2.4;
     flex-direction: column;
@@ -352,4 +352,17 @@ section.kanban h1 {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.is-dragging {
+  cursor: move;
+  opacity: 0.6;
+}
+
+.highlight {
+  background-color: #ed3a3a;
+}
+
+.over {
+  background-color: #4cd13711;
 }
