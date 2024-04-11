@@ -183,6 +183,7 @@ section.kanban h1 {
   border: none;
   padding: .6rem;
   font-size: large;
+  border-radius: 8rem;
 }
 
 .card button {
@@ -191,6 +192,8 @@ section.kanban h1 {
   margin-right: .6rem;
   margin-bottom: .5rem;
   max-width: 3rem;
+  border-radius: 8rem;
+  
 }
 
 .card button:hover > ion-icon {
@@ -250,6 +253,7 @@ section.kanban h1 {
   background: transparent;
   border: none;
   cursor: pointer;
+
 }
 
 .add-card ion-icon {
@@ -294,7 +298,7 @@ section.kanban h1 {
 .modal-content button {
   color: white;
   background: blueviolet;
-  border-radius: .5rem;
+  border-radius: 1.8rem;
   display: flex;
   border: none;
   padding: 1.2rem;
@@ -313,6 +317,7 @@ section.kanban h1 {
 
 .modal-content button ion-icon {
   align-self: center;
+  
 }
 
 .modal-content input {
