@@ -34,6 +34,7 @@ const saveTodo = (text) => {
   todoInput.focus()
 }
 
+
 const toggleForms = () => {
   modal.style.display = "block"
   editForm.classList.toggle("hide")
@@ -42,11 +43,13 @@ const toggleForms = () => {
 
 const updateTodo = (text) => {
 
-  const todos = document.querySelectorAll(".todo")
+  const todos = document.querySelectorAll(".card")
 
   todos.forEach((todo) => {
 
     let todoTitle = todo.querySelector("p")
+
+    console.log(todoTitle, text)
 
     if(todoTitle.innerText === oldInputValue) {
       todoTitle.innerText = text
@@ -66,13 +69,12 @@ todoForm.addEventListener("submit", (e) => {
 
 document.addEventListener("click", (e) => {
   const targetE1 = e.target
-  const parentE1 = e.target.closest("div")
+  const parentE1 = targetE1.closest("div")
   let todoTitle
 
   if(parentE1 && parentE1.querySelector("p")) {
     todoTitle = parentE1.querySelector("p").innerText
   }
-
 
   if(targetE1.classList.contains("editTodo")) {
     toggleForms()
